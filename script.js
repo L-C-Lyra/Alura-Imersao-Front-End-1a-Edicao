@@ -23,11 +23,11 @@ function displayResults(results) {
 
 document.addEventListener("input", function () {
   const searchTerm = searchInput.value.toLowerCase();
+  console.log(searchTerm);
   if (searchTerm === "") {
-    resultsPlaylist.classList.add("hidden");
-    resultsArtist.classList.remove("hidden");
+    resultsArtist.classList.add("hidden");
+    resultsPlaylist.classList.remove("hidden");
     return;
   }
-
   requestApi(searchTerm);
 });
