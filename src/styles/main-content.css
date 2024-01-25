@@ -112,7 +112,7 @@
   padding-top: 16px;
   margin: 10px;
   border-radius: 10px;
-  background-color: var(--text-base-darkgray);
+  background-color: #121212;
 }
 
 .playlist {
@@ -153,6 +153,11 @@
   grid-gap: 16px;
   gap: 16px;
   margin-bottom: 16px;
+
+  display: grid;
+  gap: 16px;
+  grid-gap: 32px;
+  margin: 0 auto;
 }
 
 .cards {
@@ -237,10 +242,10 @@
 }
 
 .grid-container {
-  grid-gap: var(--grid-gap);
+  grid-gap: 24px;
   display: grid;
-  grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
-  min-width: var(--min-container-width);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  min-width: 767px;
 }
 
 .artist-card {
@@ -292,6 +297,7 @@
 }
 
 .artist-name {
+  color: var(--text-base-light);
   box-sizing: border-box;
   margin-block: 0px;
   font-size: 16px;
@@ -299,7 +305,7 @@
   padding-block-end: 8px;
 }
 
-.artist-categorie {
+.artist-category {
   color: #6a6a6a;
   font-weight: 400;
   font-size: 0.875rem;
